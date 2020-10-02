@@ -17,10 +17,10 @@ import datetime as dt
 
 class RXMetadataModification:
     def __init__(self):
-        self.min_rssi = -121
-        self.max_rssi = -90  # valid to 50 miles via FSPL filter
-        self.max_snr = 0.9
-        self.min_snr = -14.5
+        self.min_rssi = -90
+        self.max_rssi = -60  # valid to less than 50 miles via FSPL filter
+        self.max_snr = 1.2
+        self.min_snr = -8.5
         self.tmst_offset = 0
         self.logger = logging.getLogger('RXMeta')
 
